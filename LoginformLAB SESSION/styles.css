@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+video {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  border: 2px solid #ccc;
+  padding: 60px; /* Increase padding for more space */
+  width: 500px; /* Increase width for a wider form */
+  background-color: rgba(204, 198, 198, 0);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px; /* Increase font size for larger text input */
+}
+
+input[type="text"]:focus {
+  background-color: rgba(70, 130, 180, 0.35);
+}
+
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #45a049;
+}
